@@ -19,9 +19,10 @@
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
