@@ -1,6 +1,6 @@
 # Js_todo_app
 
-A JavaScript todo app built with webpack using DOM manipulations
+A JavaScript todo app built with webpack while using DOM manipulations
 
 ## Description
 
