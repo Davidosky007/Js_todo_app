@@ -30,7 +30,7 @@ The 'index.js' file in the src directory is the main file which imports all the 
 
 ## Live Demo
 
-* [Live Demo Link](https://davidosky007.github.io/Restaurant_page/)
+* [Live Demo Link](https://davidosky007.github.io/Js_todo_app/)
 
 ## Built With
 
