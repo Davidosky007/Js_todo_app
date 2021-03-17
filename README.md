@@ -47,8 +47,9 @@ The 'index.js' file in the src directory is the main file which imports all the 
 ### Install and Setup
 
 * Clone repo to your local `https://github.com/Davidosky007/Js_todo_app.git`
-* cd into the cloned repo
+* cd into the cloned repo and open the app in your code editor
 * Open a terminal in the root of the app
+* then run live-server dist to open the index.html file located in the dist folder.
 
 ## Author
 
