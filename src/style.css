@@ -2,36 +2,36 @@ body {
   background-color: darkgray;
 }
 
-
 .current-project-task {
   margin-top: 6px;
-  background-color : #B0A8B9;
-  color : white;
+  background-color: #b0a8b9;
+  color: white;
   font-weight: bold;
-  height : 40px;
+  height: 40px;
 }
 
 .item {
   height: 32px;
-  border:  #ced4da solid 1px;
+  border: #ced4da solid 1px;
   background-color: white;
-  
-  input[type="checkbox"] {
-      zoom: 1.5;
-      margin-left: 3px;
 
+  input[type="checkbox"] {
+    zoom: 1.5;
+    margin-left: 3px;
   }
+
   span {
-      margin: auto 0;
-      cursor: pointer;
-      &:hover {
+    margin: auto 0;
+    cursor: pointer;
+
+    &:hover {
       color: #563d7c;
     }
   }
 }
 
 .active {
-  background-color : #B0A8B9;
+  background-color: #b0a8b9;
   color: white;
   font-weight: bold;
 }
@@ -43,7 +43,7 @@ body {
 .opacity {
   pointer-events: none;
   opacity: 0.5;
-  background: #CCC;
+  background: #ccc;
 }
 
 .default-hidden {
