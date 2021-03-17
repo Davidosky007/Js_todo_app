@@ -1,1 +1,4 @@
-console.log('am here am back')
+import './style.css';
+import UI from './ui';
+
+UI.loadListeners();
