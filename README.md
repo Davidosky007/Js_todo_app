@@ -2,6 +2,8 @@
 
 A JavaScript todo app built with webpack while using DOM manipulations
 
+(../dist/images/todo_app.png)
+
 ## Description
 
 In this project we continue practicing DOM manipulation by dynamically rendering a simple Todo list app. By the end, we are going to be using JavaScript to generate most of the app's content! The project has two directories namely 'src' and 'dist' other than the root directory.
@@ -44,13 +46,34 @@ The 'index.js' file in the src directory is the main file which imports all the 
 * style loader
 * css loader
 
-### Install and Setup
+### Prerequisites
 
-* Clone repo to your local `https://github.com/Davidosky007/Js_todo_app.git`
-* cd into the cloned repo and open the app in your code editor
-* Open a terminal in the root of the app
-* then run live-server dist to open the index.html file located in the dist folder.
+NodeJs
 
+### Setup
+
+* Clone this repository with: git clone `https://github.com/Davidosky007/Js_todo_app.git` using your terminal or command line.
+
+* Change to the project directory by entering cd "task-todo" in the terminal
+
+* Next run npm install to install the necessary dependencies
+
+* Finally run the 'npm run build' and 'npm start' to start the application
+
+* 'npm run dev' is for building the project in development mode
+
+* 'npm run build' is for building the project in production mode
+
+* 'npm start' is for starting the server in development mode
+
+
+### Usage
+
+Start server with:
+
+```
+    npm start
+```
 ## Author
 
 👤 **David Bassey**
