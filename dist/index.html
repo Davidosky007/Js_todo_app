@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADvnQQA8p8AAOmgBADvmwEA9Pz/AOedAwDrvlsA76ECAP/88gDrngEA+eK0AOubAADy1ZEA/eXCAPrTiAD54rMA////AO2dAgDilAYA76IFAO2gAgDomg4A6Z0BAPS9TgDrnQEA+8llAPnhtADsnAMA55oAAPK/VwD47+8A+v30AO+cAwD21pQA981+APGdAQD89swA99+jAPXbpADsnQAA+eCuAN6eEQDpnwIA//v+AO2gAADsnwIA7Z8CAPedAAD94KAA/v7+APT6+ADzzpUA7JwBAPSgAAD1+PwA8KICAOacAADtnwEA6JsCAPjhsQDnoAUA9LxGAN+ZDADywmIA9MdsAPPLeADtulAA++K8APritQD2nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAkJCQkJCQkJCQkJCQkJCSwJCQkJCQkJCQkJCQkJCQksCQkJCRIoOwoKLwkJCQkJLAkJOSYlCwAjFkQNCQkJCSwJCQwwCQkJCQkDCkMJCQksCRMhCQkJFAkJCSAaNQkJLAkzGwkJKRAxCQkJGA8JCSwJDjcJHxAQEAQJCQEKCQksCSIHCBAQJzYQKwkJCQkJLAlBBQkyLQkJEBAkCQkJCSwJHEAJCQkJCQIQEDwJCQksCQk/GQkJCQkJPhAQRQkJLAkJCQYdOio0CQkVHgkJCSwJCQkJOEIXPQkJCQkJCQksCQkJCQkJCQkJCQkJCQkJLhEREREREREREREREREREQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/style.css">
+  <title>My Todo App</title>
+</head>
+
+<body>
+  <div class="container-fluid m-0">
+    <div class="row  text-white" id="navbar">
+      <div class="col-3 text-center">
+        <h3>Projects</h3>
+      </div>
+      <div class="col-6 text-center">
+        <h3>Tasks</h3>
+      </div>
+      <div class="col-3 text-center">
+        <h3>Task's Details</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3" id="projects-names">
+        <div class="d-flex my-2">
+          <button type="submit" class="btn btn-primary" id="create-project">+</button>
+          <input type="text" name="project-name" id="project-name" class="form-control"
+            placeholder="Add a Project Name .." required>
+        </div>
+        <div id="projects-user">
+        </div>
+      </div>
+      <div class="col-6" id="tasks-names">
+        <div class="current-project-task" id="current-project">
+          First select a Project
+        </div>
+        <div class="d-flex my-2">
+          <button type="submit" class="btn btn-primary" id="add-task">New Task</button>
+        </div>
+        <div id="project-tasks">
+        </div>
+      </div>
+      <div class="col-3" id="tasks-details">
+        <div class="current-project-task" id="current-task">
+          Current Task
+        </div>
+        <div class="d-none" id='detail-task'>
+          <div class="form">
+            <div class="form-group">
+              <label for="name-task">Title *</label>
+              <input type="text" name="project-name" id="name-task" class="form-control"
+                placeholder="Add a Task Name ..">
+            </div>
+            <div class="form-group">
+              <label for="due-date">Due Date *</label>
+              <input type="date" class="form-control" name="due-date" id="due-date" aria-describedby="helpId" required>
+            </div>
+            <div class="form-group">
+              <label for="priority">Priority *</label>
+              <select class="browser-default custom-select" id="select-priority">
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Description *</label>
+              <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="edit-task">Edit Task</button>
+            <button type="submit" class="btn btn-primary" id="save-task">Save Task</button>
+          </div>
+        </div>
+        <div class="alert alert-success d-none" role="alert">
+          <strong>Success!</strong> The task was edited successfully!
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
