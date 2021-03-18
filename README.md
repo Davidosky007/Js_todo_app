@@ -2,7 +2,7 @@
 
 A JavaScript todo app built with webpack while using DOM manipulations
 
-![Todo App](../dist/images/todo_app.png)
+![Todo App](./dist/images/todo_app.png)
 
 ## Description
 
