@@ -54,7 +54,7 @@ NodeJs
 
 * Clone this repository with: git clone `https://github.com/Davidosky007/Js_todo_app.git` using your terminal or command line.
 
-* Change to the project directory by entering cd "task-todo" in the terminal
+* Change to the project directory by entering cd "Js_todo_app" in the terminal
 
 * Next run npm install to install the necessary dependencies
 
