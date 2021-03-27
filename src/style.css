@@ -1,51 +1,16 @@
-body {
-  background-color: darkgray;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.current-project-task {
-  margin-top: 6px;
-  background-color: #b0a8b9;
-  color: white;
-  font-weight: bold;
-  height: 40px;
+.bg-test {
+  background: #f8f9fa;
 }
 
-.item {
-  height: 32px;
-  border: #ced4da solid 1px;
-  background-color: white;
-
-  input[type="checkbox"] {
-    zoom: 1.5;
-    margin-left: 3px;
-  }
-
-  span {
-    margin: auto 0;
-    cursor: pointer;
-
-    &:hover {
-      color: #563d7c;
-    }
-  }
+.c-pointer {
+  cursor: pointer;
 }
 
-.active {
-  background-color: #b0a8b9;
-  color: white;
-  font-weight: bold;
-}
-
-.line-through {
-  text-decoration-line: line-through;
-}
-
-.opacity {
-  pointer-events: none;
-  opacity: 0.5;
-  background: #ccc;
-}
-
-.default-hidden {
+.hide {
   display: none;
 }

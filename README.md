@@ -74,6 +74,15 @@ Start server with:
 ```
     npm start
 ```
+
+## Test
+
+To run the integration Tests locally using [Jest](https://jestjs.io/), just type the following commands over the terminal in Linux or Mac or the Windows cmd console:
+
+```s
+$ npm run test
+
+```
 ## Author
 
 👤 **David Bassey**
