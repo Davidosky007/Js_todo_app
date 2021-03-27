@@ -1,4 +1,8 @@
+import render from './scripts/dom-handlers/render';
 import './style.css';
-import UI from './ui';
+import newProject from './scripts/project';
 
-UI.loadListeners();
+if (!localStorage.getItem('projects')) {
+  localStorage.setItem('projects', JSON.stringify([newProject('Default Project')]));
+}
+render();
